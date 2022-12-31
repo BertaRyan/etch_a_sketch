@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url(img/cool.jpg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.app-name {
+    text-align: center;
+    margin-top: 50px;
+    color: rgb(255, 255, 255);
+    font-size: 2.5em;
+    font-family: cursive;
+    background-color: rgba(114, 114, 239, 0.642);
+    width: 600px;
+
+}
+
+.title-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+
+
+}
+
+
+
+.title-container img {
+    width: 100%;
+}
+
+.grid-container {
+    display: flex;
+    flex-wrap: wrap;
+    background: rgba(114, 114, 239, 0.446);
+    height: 600px;
+    width: 600px;
+    overflow: hidden;
+}
+
+.buttons {
+    margin-top: 30px;
+    display: flex;
+    gap: 20px;
+}
+
+.buttons button {
+    padding: 10px;
+    color: white;
+    border: 3px solid black;
+    background-color: rgba(114, 114, 239, 0.446);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.big {
+    border: 3px solid black;
+    height: 40px;
+    width: 40px;
+    background: white;
+    transition: all 1;
+}
+
+.medium {
+    border: 1px solid black;
+    height: 20px;
+    width: 20px;
+    background: white;
+}
+
+.small {
+    border: 1px solid black;
+    height: 10;
+    width: 10px;
+    background: white;
+}
