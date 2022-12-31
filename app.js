@@ -2,11 +2,8 @@ const btn1 = document.querySelector('#one');
 const btn2 = document.querySelector('#two')
 const btn3 = document.querySelector('#three')
 const reset = document.querySelector('.clear')
-const trippy = document.querySelector('.trippy');
+
 const gridContainer = document.querySelector('.grid-container')
-
-
-
 
 btn1.addEventListener('click', (e) => {
     btn1.disabled = true;
@@ -18,8 +15,6 @@ btn1.addEventListener('click', (e) => {
     reset.addEventListener('click', () => {
         greatReset()
     })
-
-
     once = true;
 })
 
@@ -61,19 +56,6 @@ btn3.addEventListener('click', () => {
     once = true;
 })
 
-trippy.addEventListener('click', () => {
-    const rgb = trippyColor();
-    const div = document.querySelectorAll('div');
-    div.forEach((box) => {
-        box.addEventListener("mouseover", (e) => {
-
-
-            e.target.style.backgroundColor = rgb;
-        })
-    })
-
-
-})
 
 function makeGrid() {
     for (let i = 0; i < 255; i++) {
@@ -106,18 +88,11 @@ function mHover() {
     })
 }
 
-const trippyColor = () => {
-    const r = Math.floor(Math.random() * 256)
-    const g = Math.floor(Math.random() * 256)
-    const b = Math.floor(Math.random() * 256)
-    let color = "rgb(" + r + "," + g + "," + b + ")";
-
-    return color;
-}
 
 
 function greatReset() {
     gridContainer.innerHTML = '';
+
     btn1.disabled = false;
     btn2.disabled = false;
     btn3.disabled = false;

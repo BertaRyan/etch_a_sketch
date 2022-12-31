@@ -28,6 +28,7 @@ body {
     justify-content: center;
     align-items: center;
     margin-bottom: 50px;
+    max-width:600px;
 
 
 }
@@ -43,7 +44,7 @@ body {
     flex-wrap: wrap;
     background: rgba(114, 114, 239, 0.446);
     height: 600px;
-    width: 600px;
+    max-width: 600px;
     overflow: hidden;
 }
 
@@ -63,7 +64,7 @@ body {
 }
 
 .big {
-    border: 3px solid black;
+    border: 1px solid black;
     height: 40px;
     width: 40px;
     background: white;
@@ -83,3 +84,4 @@ body {
     width: 10px;
     background: white;
 }
+
